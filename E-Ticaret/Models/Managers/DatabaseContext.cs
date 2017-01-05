@@ -23,8 +23,12 @@ namespace E_Ticaret.Models.Managers
             for (int i = 0; i < 120; i++)
             {
                 Kullanici kullanici = new Kullanici();
-                kullanici.KullaniciAdi = FakeData.NameData.GetFirstName();
-                kullanici.Sifre = FakeData.NumberData.GetNumber(10000, 99999).ToString();
+                kullanici.KULLANICIADI = FakeData.NameData.GetFullName();
+                kullanici.SIFRE = FakeData.NumberData.GetNumber(10000000, 99999999).ToString();
+                kullanici.AD = FakeData.NameData.GetFirstName();
+                kullanici.SOYAD = FakeData.NameData.GetSurname();
+                kullanici.EPOSTA = FakeData.NetworkData.GetEmail();
+                //kullanici.CEPTELEFONU = FakeData.PhoneNumberData.GetPhoneNumber();
 
                 context.Kullanici.Add(kullanici);
             }

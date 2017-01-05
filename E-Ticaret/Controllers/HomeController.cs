@@ -14,14 +14,31 @@ namespace E_Ticaret.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            
 
-            DatabaseContext db = new DatabaseContext();
 
-            HomePageViewModel model = new HomePageViewModel();
+                DatabaseContext db = new DatabaseContext();
 
-            model.Kullanici = db.Kullanici.ToList();
+                HomePageViewModel model = new HomePageViewModel();
 
-            return View(model);
+                model.Kullanici = db.Kullanici.ToList();
+
+                
+
+            if (1 != 1)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            else
+            {
+                return View(model);
+            }
+
+            
+
+
+
+
         }
     }
 }
