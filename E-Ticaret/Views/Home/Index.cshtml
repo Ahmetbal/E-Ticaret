@@ -4,5 +4,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
 
+<ul class="list-group">
+    @foreach (var kullanici in Model.Kullanici)
+    {
+        <li class="list-group-item">
+            @Html.ActionLink("Düzenle", "Duzenle", "Kullanici", new { kullaniciid = kullanici.ID }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Sil", "Sil", "Kullanici", new { kullaniciid = kullanici.ID }, new { @class = "btn btn-danger" })
+            @(kullanici.KULLANICIADI + " " + kullanici.SIFRE)
+        </li>
+    }
+</ul>

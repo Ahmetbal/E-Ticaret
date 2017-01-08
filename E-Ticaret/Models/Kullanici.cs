@@ -14,10 +14,13 @@ namespace E_Ticaret.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
-        [StringLength(20, ErrorMessage = "{0} en fazla {1} karakter olabilir."), Required(ErrorMessage = "{0} boş geçilemez."), DisplayName("Kullanıcı Adı")]
+
+        [Required(ErrorMessage = "{0} boş geçilemez.")]
+        [StringLength(20, ErrorMessage = "{0} en fazla {1} karakter olabilir."), DisplayName("Kullanıcı Adı")]
         public string KULLANICIADI { get; set; }
 
-        [StringLength(250, ErrorMessage = "{0} en fazla {1} karakter olabilir."), Required(ErrorMessage = "{0} boş geçilemez."), DisplayName("Şifre")]
+        [Required(ErrorMessage = "{0} boş geçilemez.")]
+        [StringLength(250, ErrorMessage = "{0} en fazla {1} karakter olabilir."), DisplayName("Şifre")]
         public string SIFRE { get; set; }
 
         [StringLength(25, ErrorMessage = "{0} en fazla {1} karakter olabilir."), Required(ErrorMessage = "{0} boş geçilemez."), DisplayName("Ad")]
@@ -31,6 +34,10 @@ namespace E_Ticaret.Models
 
         [StringLength(10, ErrorMessage = "{0} en fazla {1} karakter olabilir."), DisplayName("Cep telefonu")] 
         public string CEPTELEFONU { get; set; }
+
+        [DisplayName("Son Giriş")]
+        [DataType(DataType.DateTime)]
+        public DateTime? SONGIRIS { get; set; }
 
     }
 }
