@@ -6,35 +6,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using E_Ticaret.Filters;
 
 namespace E_Ticaret.Controllers
 {
+    [AuthFilter]
     public class HomeController : Controller
     {
         // GET: Home
         public ActionResult Index()
         {
-            
 
 
-                DatabaseContext db = new DatabaseContext();
 
-                HomePageViewModel model = new HomePageViewModel();
+            DatabaseContext db = new DatabaseContext();
 
+            HomePageViewModel model = new HomePageViewModel();
+
+            if (db.Kullanici != null)
+            {
                 model.Kullanici = db.Kullanici.ToList();
-
-                
-
-            if (Session["login"] == null)
-            {
-                return RedirectToAction("Index", "Login");
-            }
-            else
-            {
-                return View(model);
             }
 
-            
+            return View(model);
+
 
 
 

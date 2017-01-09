@@ -39,5 +39,10 @@ namespace E_Ticaret.Models
         [DataType(DataType.DateTime)]
         public DateTime? SONGIRIS { get; set; }
 
+
+        [DisplayName("Son Çıkış")]
+        [DataType(DataType.DateTime)]
+        public DateTime? SONCIKIS { get; set; }
+
     }
 }

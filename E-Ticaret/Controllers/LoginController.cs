@@ -59,8 +59,16 @@ namespace E_Ticaret.Controllers
 
         public ActionResult Cikis()
         {
+
+            Kullanici k = (Kullanici)Session["login"];
+            Kullanici kullanici = db.Kullanici.Where(x => x.ID == k.ID).FirstOrDefault();
+            kullanici.SONCIKIS = DateTime.Now;
+            int sonuc = db.SaveChanges(); //çıkış tarihi kaydediliyor
             Session.Clear();
+
             return RedirectToAction("Index");
+
+
         }
 
     }
