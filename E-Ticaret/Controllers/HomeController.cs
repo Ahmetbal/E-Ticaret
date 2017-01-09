@@ -25,7 +25,7 @@ namespace E_Ticaret.Controllers
 
                 
 
-            if (1 != 1)
+            if (Session["login"] == null)
             {
                 return RedirectToAction("Index", "Login");
             }
