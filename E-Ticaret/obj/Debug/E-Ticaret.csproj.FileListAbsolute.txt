@@ -10,7 +10,6 @@ C:\Proje\E-Ticaret\E-Ticaret\bin\roslyn\System.Reflection.Metadata.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\roslyn\vbc.exe
 C:\Proje\E-Ticaret\E-Ticaret\bin\roslyn\VBCSCompiler.exe
 C:\Proje\E-Ticaret\E-Ticaret\bin\roslyn\VBCSCompiler.exe.config
-C:\Proje\E-Ticaret\E-Ticaret\bin\E-Ticaret.dll.config
 C:\Proje\E-Ticaret\E-Ticaret\bin\E-Ticaret.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\E-Ticaret.pdb
 C:\Proje\E-Ticaret\E-Ticaret\bin\Microsoft.AI.Agent.Intercept.dll
@@ -21,7 +20,6 @@ C:\Proje\E-Ticaret\E-Ticaret\bin\Microsoft.AI.Web.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\Microsoft.AI.WindowsServer.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\Microsoft.ApplicationInsights.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Proje\E-Ticaret\E-Ticaret\bin\Microsoft.Web.Infrastructure.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\Newtonsoft.Json.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\System.Net.Http.Formatting.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\System.Web.Helpers.dll
@@ -57,3 +55,12 @@ C:\Proje\E-Ticaret\E-Ticaret\bin\FakeData.dll
 C:\Proje\E-Ticaret\E-Ticaret\bin\EntityFramework.xml
 C:\Proje\E-Ticaret\E-Ticaret\bin\EntityFramework.SqlServer.xml
 C:\Proje\E-Ticaret\E-Ticaret\bin\FakeData.pdb
+C:\PROJE\E-Ticaret\E-Ticaret\bin\mscorlib.dll
+C:\PROJE\E-Ticaret\E-Ticaret\bin\System.Net.Http.dll
+C:\PROJE\E-Ticaret\E-Ticaret\bin\System.Net.Http.xml
+C:\PROJE\E-Ticaret\E-Ticaret\bin\tr\mscorlib.resources.dll
+C:\PROJE\E-Ticaret\E-Ticaret\bin\normidna.nlp
+C:\PROJE\E-Ticaret\E-Ticaret\bin\normnfc.nlp
+C:\PROJE\E-Ticaret\E-Ticaret\bin\normnfd.nlp
+C:\PROJE\E-Ticaret\E-Ticaret\bin\normnfkc.nlp
+C:\PROJE\E-Ticaret\E-Ticaret\bin\normnfkd.nlp
